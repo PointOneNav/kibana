@@ -18,7 +18,7 @@
 #server.name: "your-hostname"
 
 # The URL of the Elasticsearch instance to use for all your queries.
-#elasticsearch.url: "http://localhost:9200"
+elasticsearch.url: "https://search-pointone-gps-ayeodtiy6ohkujqprgcqkwragm.us-west-1.es.amazonaws.com:443"
 
 # When this setting's value is true Kibana uses the hostname specified in the server.host
 # setting. When the value of this setting is false, Kibana uses the hostname of the host
@@ -27,7 +27,7 @@
 
 # Kibana uses an index in Elasticsearch to store saved searches, visualizations and
 # dashboards. Kibana creates a new index if the index doesn't already exist.
-#kibana.index: ".kibana"
+kibana.index: ".kibana_self_hosted"
 
 # The default application to load.
 #kibana.defaultAppId: "discover"
@@ -102,3 +102,6 @@
 # The default locale. This locale can be used in certain circumstances to substitute any missing
 # translations.
 #i18n.defaultLocale: "en"
+
+tilemap.options.maxZoom: 18
+tilemap.url: https://api.mapbox.com/styles/v1/jpmoran12/cj6sah64h57yp2ro1f5z8qaon/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoianBtb3JhbjEyIiwiYSI6ImNpejk0eWluMjAwajgycW82bzU5cmZnMWwifQ.6xylhgwKDW15ps6hbxpPuw
