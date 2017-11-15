@@ -1,3 +1,8 @@
+# Point One Fork of Kibana
+This repo contains modifications to kibana for point one.  To deploy this, read the readme on build debian packages in this repo.  You will need ruby, gem, pleaserun(no newer that 0.24).
+
+Additionally there is an oauth2_proxy.cfg you can use with https://github.com/bitly/oauth2_prox and an nginx config.  You will need to replace relevant information like client_id, path to server, domain, google creds, ip address, but it should give a start.
+
 # Kibana 5.5.2
 
 Kibana is your window into the [Elastic Stack](https://www.elastic.co/products). Specifically, it's
