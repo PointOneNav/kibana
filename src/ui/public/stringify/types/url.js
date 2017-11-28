@@ -116,7 +116,12 @@ export function stringifyUrl(Private) {
                         `A dynamically-specified video located at ${url}` :
                         label;
 
-                    return `<video src="${url}" alt="${videoLabel}" controls="true" height="600">`;
+                    const videoElement = `<video src="${url}" alt="${videoLabel}" controls="true" height="600">`;
+                    if (url == '') {
+                        videoElement = '<span>No video specified</span>'
+                    }
+
+                    return videoElement;
                 default:
                     let linkLabel;
 
@@ -126,7 +131,8 @@ export function stringifyUrl(Private) {
                         linkLabel = label;
                     }
 
-                    return `<a href="${url}" target="_blank">${linkLabel}</a>`;
+                    return ` < a href = "${url}"
+                    target = "_blank" > $ { linkLabel } < /a>`;
             }
         }
     };
